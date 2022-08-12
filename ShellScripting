@@ -336,3 +336,5 @@ find $(echo $1 | tr 'A-Z' 'a-z') -depth
 
 exit 0
 
+17------------------------
+for f in `find`; do mv -v "$f" "`echo $f | tr '[A-Z]' '[a-z]'`"; done
