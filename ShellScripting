@@ -48,3 +48,10 @@ rev=$(( $rev * 10 + $sd ))
 a=$(( $a / 10))
 done
 echo "reverse number of entered digit is" $rev
+10--------------------
+#!/bin/bash
+echo "give me a number or string"
+read a
+i=$((${#a}-1))
+echo ${a:$i:1}
+
