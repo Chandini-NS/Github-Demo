@@ -373,3 +373,6 @@ for file in *.$old_ext
 do
     mv -v "$file" "${file%.$old_ext}.$new_ext"
 done;
+----------------------------
+find -type f -name '*.jpg' | while read f; do mv "$f" "${f%.txt}"; done
+find -type f -name '*.sh' | while read f; do mv "$f" "${f%.jpg}"; done
